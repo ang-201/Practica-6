@@ -1,17 +1,17 @@
-import {Typography}  from "@mui/material"
-const About = () =>{
+import  {Typography} from "@mui/material";
 
-    return (
-        <div>
-            <Typography variant="h4" component="h1" sx={{mb: 2}}>
+const About = () => {
 
-            Lorem Ipsum
-            </Typography>
-        </div>
+return(
+    <Typography variant="h4" component="h1"  sx={{mb:2}}>
+
+        Lore ipsum
+    </Typography>
 
 
-    );
 
+
+)
 
 
 };

@@ -1,26 +1,31 @@
-// Layout.js
+import {Box, Typography} from "@mui/material";
+const Layout = ( {children}) => {
 
-import {Box, Container, Typography} from "@mui/material";
+return(  
+    
+    
+    
+    <div>
+        <Box>
+            <container>
+            
+                {children}
+            </container>
 
-const Layout = ({ children}) => {
+    
+    
+        </Box>
+    
+        <Box>
 
-return (
-
-<div>
-  <Box>
-      <Container>
-          {children}
-      </Container>
-  </Box>
-
-    <Box>
-            <Typography variant="h4" component="h1" sx={{mb: 2}}>
-                Derechos Reservados
+            <Typography variant="h4" component="h1"  sx={{mb:2}}> 
+                Derechos reservados
             </Typography>
-    </Box>
+        </Box>
+    
+    </div>
 
-</div>
-
-)};
+)
+};
 
 export default Layout;

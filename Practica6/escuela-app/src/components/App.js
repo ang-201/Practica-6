@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
-import React from "react";
+import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './components/Home';
-import About from './components/About';
-
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,11 +11,13 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element = {<Home />} />
-          <Route path="/about" element ={<About />} />
+          <Route path="/about" element = {<About />} />
         </Routes>
       </Layout>
     </Router>
   );
-}
+};
+
+
 
 export default App;
